@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Submission</title>
+  <style>
+    :root {
+      --main-color: #4CAF50;
+      --background-color: #fff;
+      --font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      margin: 0;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: var(--main-color);
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    img {
+      max-width: 100%;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    code, pre {
+      background: #f4f4f4;
+      padding: 10px;
+      display: block;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+
+    @media screen and (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    #darkToggle {
+      margin: 10px 0;
+      padding: 6px 12px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📌 Portfolio Submission for Web Design Assessment</h1>
+
+  <section>
+    <h2>1. Project Description</h2>
+    <p>
+      This is a responsive personal portfolio website built using HTML, CSS, and JavaScript.
+      It showcases my skills, projects, and contact information. The site uses a template,
+      but I customized the layout, accessibility, and added interactive features to enhance
+      user experience.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Website Link</h2>
+    <p><a href="https://your-portfolio-link.com" target="_blank">https://your-portfolio-link.com</a></p>
+  </section>
+
+  <section>
+    <h2>3. W3C Validator Compliance</h2>
+    <p>This site is compliant with W3C HTML standards.</p>
+    <img src="screenshots/w3c-validation.png" alt="W3C Validator Screenshot" />
+  </section>
+
+  <section>
+    <h2>4. Responsive Design</h2>
+    <p>The site adapts well on all screen sizes. Below are screenshots:</p>
+    <img src="screenshots/responsive-mobile.png" alt="Mobile View"/>
+    <img src="screenshots/responsive-tablet.png" alt="Tablet View"/>
+    <img src="screenshots/responsive-desktop.png" alt="Desktop View"/>
+  </section>
+
+  <section>
+    <h2>5. CSS Styling</h2>
+    <p>Customized styling for better readability and design consistency:</p>
+    <pre><code>
+:root {
+  --main-color: #4CAF50;
+  --background-color: #fff;
+  --font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+    </code></pre>
+  </section>
+
+  <section>
+    <h2>6. Template Customizations & Accessibility</h2>
+    <ul>
+      <li>Improved color contrast and added `aria-labels` for navigation.</li>
+      <li>Enhanced semantic HTML structure (e.g., using `<section>`, `<article>`).</li>
+      <li>All images use meaningful `alt` attributes.</li>
+      <li>Keyboard navigation enabled using `tabindex` and skip links.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Four Extras Demonstrated</h2>
+    <ol>
+      <li><strong>Dark Mode Toggle</strong>: Toggle theme using a button and CSS variables.</li>
+      <li><strong>Animated Skill Bars</strong>: Skills animate when visible on scroll.</li>
+      <li><strong>Project Modal Viewer</strong>: Click to open project details in modal.</li>
+      <li><strong>Form Validation</strong>: JS-powered form field validation with feedback.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>8. Example Extra: Dark Mode Toggle</h2>
+    <button id="darkToggle">Toggle Dark Mode</button>
+    <script>
+      const toggle = document.getElementById('darkToggle');
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+      });
+    </script>
+  </section>
+
+</body>
+</html>
